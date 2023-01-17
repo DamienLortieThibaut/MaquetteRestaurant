@@ -1,1 +1,74 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: AlluraRegular;
+  src: url("../fonts/Allura-Regular.ttf");
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: RobotLight;
+  src: url("../fonts/Roboto-Light.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: RobotLight;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  background: url("../img/bg-slider-06.jpg") center/cover;
+  height: 100vh;
+  color: rgb(239, 239, 239);
+}
+header .header-container {
+  padding: 10px 14%;
+}
+header .header-container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-container nav h2 {
+  font-size: 2.6rem;
+  font-family: AlluraRegular;
+}
+header .header-container nav .menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 500px;
+  width: 80%;
+}
+header .header-container nav .menu li {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+header .header-container nav .social-network {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+header .header-container .content-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-container .content-header h2 {
+  font-family: AlluraRegular;
+  color: rgb(144, 102, 68);
+  font-family: 2rem;
+}
+header .header-container .content-header img {
+  height: 5%;
+  width: 5%;
+}/*# sourceMappingURL=index.css.map */

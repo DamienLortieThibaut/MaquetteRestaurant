@@ -1,0 +1,34 @@
+@font-face {
+    font-family: AlluraRegular;
+    src: url("../fonts/Allura-Regular.ttf");
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: RobotLight;
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+$font1: RobotLight;
+$font2: PoppinsMedium;
+$font3: AlluraRegular;
+$white1: rgb(239, 239, 239);
+$brown1: rgb(144,102,68);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font1;
+}
+
+li{
+    list-style-type: none;
+}
