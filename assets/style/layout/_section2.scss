@@ -1,0 +1,25 @@
+.section-second{
+    height: 370px;
+    background: $black1;
+    .section-second-container{
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3{
+            color: $brown1;
+            font-family: $font3;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            min-width: 800px;
+            width: 70%;
+            li{
+                width: 10%;
+            }
+        }
+    }
+}

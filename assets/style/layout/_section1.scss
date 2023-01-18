@@ -1,0 +1,61 @@
+.section-first{
+    height: 400px;
+    .section-first-container{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .section-first-left-part{
+            background: rgb(235, 234, 234);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            .section-first-left-part-container{
+                border: 1px dashed $brown1;
+                padding: 25px;
+                h3{
+                    font-family: $font3;
+                    color: $brown1;
+                    font-weight: 500;
+                    font-size: 1.9rem;
+                }
+                h2{
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-family: $font2;
+                    font-weight: 1.2rem;
+                    margin-top: -15px;
+                }
+                .logo{
+                    margin: 20px 0;
+                }
+                p{
+                    font-size: 0.9rem;
+                }
+                .avatar01{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50px;
+                    margin: 15px 0;
+                }
+                .name-chef{
+                    text-transform: uppercase;
+                    color: gray;
+                    font-weight: bold;
+                    font-size: 0.8rem;
+                    span{
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                        text-transform: capitalize;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .section-first-right-part{
+            background: url("../img/store-01.jpg") center/cover;
+        }
+    }
+}
