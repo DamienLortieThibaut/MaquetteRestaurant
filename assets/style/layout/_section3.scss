@@ -1,0 +1,48 @@
+.section-third{
+    &::before{
+        content: "";
+        background: url("../img/bg-menu-01.jpg") center/cover;
+        position: relative;
+        display: block;
+        height: 660px;
+    }
+    position: relative;
+    .section-third-container{
+        top: -50px;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        .menu{
+            border-top: 4px solid rgb(199, 135, 52);
+            background: rgb(238,238,238);
+            display: flex;
+            justify-content: center;
+            min-width: 880px;
+            min-height: 660px;
+            align-items: center;
+            .meal{
+                padding: 20px 0;
+                display: grid;
+                grid-template-columns: 30% 50% 20%;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px dashed grey;
+                min-width: 400px;
+                img{
+                    border-radius: 50px
+                }
+                .ingredients{
+                    span{
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                }
+                .price {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: rgb(144, 109, 5);
+                }
+            }
+        }
+    }
+}

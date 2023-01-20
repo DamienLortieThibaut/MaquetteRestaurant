@@ -181,6 +181,11 @@ header .header-container .content-header p {
 .section-second .section-second-container h3 {
   color: rgb(144, 102, 68);
   font-family: AlluraRegular;
+  font-weight: 300;
+  font-size: 2.3rem;
+}
+.section-second .section-second-container img {
+  margin: 40px 0;
 }
 .section-second .section-second-container ul {
   display: flex;
@@ -188,6 +193,206 @@ header .header-container .content-header p {
   min-width: 800px;
   width: 70%;
 }
-.section-second .section-second-container ul li {
-  width: 10%;
+.section-second .section-second-container ul p {
+  color: rgb(239, 239, 239);
+  border-bottom: 1px solid rgb(239, 239, 239);
+  padding-bottom: 2px;
+  transition: 0.2s;
+}
+.section-second .section-second-container ul p:hover {
+  color: rgb(144, 102, 68);
+  border-bottom: 1px solid rgb(144, 102, 68);
+  cursor: pointer;
+}
+
+.section-third {
+  position: relative;
+}
+.section-third::before {
+  content: "";
+  background: url("../img/bg-menu-01.jpg") center/cover;
+  position: relative;
+  display: block;
+  height: 660px;
+}
+.section-third .section-third-container {
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+}
+.section-third .section-third-container .menu {
+  border-top: 4px solid rgb(199, 135, 52);
+  background: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  min-width: 880px;
+  min-height: 660px;
+  align-items: center;
+}
+.section-third .section-third-container .menu .meal {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px dashed grey;
+  min-width: 400px;
+}
+.section-third .section-third-container .menu .meal img {
+  border-radius: 50px;
+}
+.section-third .section-third-container .menu .meal .ingredients span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.section-third .section-third-container .menu .meal .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(144, 109, 5);
+}
+
+.section-fourth {
+  background: rgb(33, 32, 30);
+}
+.section-fourth .section-fourth-container {
+  text-align: center;
+  margin: 0 15%;
+  background: rgb(239, 239, 239);
+  height: 500px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.section-fourth .section-fourth-container .left-part {
+  background: black;
+  color: rgb(239, 239, 239);
+  padding: 10px;
+}
+.section-fourth .section-fourth-container .left-part .left-part-container {
+  border: 1px dashed rgb(239, 239, 239);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.section-fourth .section-fourth-container .left-part .left-part-container .title-section-fourth h3 {
+  font-family: AlluraRegular;
+  color: rgb(144, 102, 68);
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+.section-fourth .section-fourth-container .left-part .left-part-container .title-section-fourth h2 {
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+.section-fourth .section-fourth-container .left-part .left-part-container .schedule h2 {
+  color: rgb(144, 102, 68);
+  text-transform: uppercase;
+}
+.section-fourth .section-fourth-container .left-part .left-part-container .phone-number {
+  color: rgb(144, 102, 68);
+}
+.section-fourth .section-fourth-container .right-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-fourth .section-fourth-container .right-part .online-booking {
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.section-fourth .section-fourth-container .right-part .online-booking h3 {
+  font-family: AlluraRegular;
+  font-weight: 100;
+  font-size: 3rem;
+  color: rgb(144, 102, 68);
+}
+.section-fourth .section-fourth-container .right-part .online-booking h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -15px;
+  font-size: 2rem;
+  font-family: PoppinsMedium;
+}
+.section-fourth .section-fourth-container .right-part .online-booking img {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+.section-fourth .section-fourth-container .right-part .online-booking form {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.section-fourth .section-fourth-container .right-part .online-booking form input, .section-fourth .section-fourth-container .right-part .online-booking form select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(144, 102, 68);
+  padding: 5px;
+  width: 90%;
+}
+.section-fourth .section-fourth-container .right-part .online-booking form button {
+  grid-area: 3/2/4/3;
+  background: black;
+  color: rgb(239, 239, 239);
+  text-transform: uppercase;
+  border-radius: 50px;
+  width: 150px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.section-fifth {
+  background: rgb(33, 32, 30);
+  padding-top: 70px;
+  text-align: center;
+  height: 500px;
+}
+.section-fifth .section-fifth-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-fifth .section-fifth-container h3 {
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: rgb(144, 102, 68);
+  font-family: AlluraRegular;
+}
+.section-fifth .section-fifth-container h2 {
+  font-family: PoppinsMedium;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(239, 239, 239);
+  font-size: 2rem;
+  margin-top: -10px;
+}
+.section-fifth .section-fifth-container .grid-event {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.section-fifth .section-fifth-container .grid-event .event1 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .event01-img {
+  background: url("../img/event-01.jpg") center/cover;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .event02-img {
+  background: url("../img/event-02.jpg") center/cover;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .center-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .center-date h2 {
+  background: rgb(33, 32, 30);
 }/*# sourceMappingURL=index.css.map */

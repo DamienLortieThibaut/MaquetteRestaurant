@@ -1,0 +1,49 @@
+.section-fifth{
+    background: $black1;
+    padding-top: 70px;
+    text-align: center;
+    height: 500px;
+    .section-fifth-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            font-weight: 100;
+            font-size: 2.5rem;
+            color: $brown1;
+            font-family: $font3;
+        }
+        h2{
+            font-family: $font2;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $white1;
+            font-size: 2rem;
+            margin-top: -10px;
+        }
+        .grid-event{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            .event1{
+                display: grid;
+                grid-template-columns: 20% 80%;
+                .event01-img{
+                    background: url("../img/event-01.jpg") center/cover;
+                }
+                .event02-img{
+                    background: url("../img/event-02.jpg") center/cover;
+                }
+                .center-date{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h2{
+                        background: $black1;
+                    }
+                }
+            }
+        }
+    }
+}
