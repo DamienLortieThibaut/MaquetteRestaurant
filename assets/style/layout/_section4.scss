@@ -1,4 +1,5 @@
 .section-fourth{
+    padding-top: 30px;
     background: $black1;
     .section-fourth-container{
         text-align: center;
@@ -81,6 +82,7 @@
                         width: 90%;
                     }
                     button{
+                        margin-top: 40px;
                         grid-area: 3 / 2 / 4 / 3;
                         background: black;
                         color: $white1;
@@ -90,6 +92,12 @@
                         letter-spacing: 3px;
                         font-weight: bold;
                         padding: 10px 0;
+                        transition: 0.2s;
+                        &:hover{
+                            background: transparent;
+                            color: black;
+                            cursor: pointer;
+                        }
                     }
                 }
             }

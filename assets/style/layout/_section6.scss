@@ -1,0 +1,30 @@
+// .section-sixth{
+//     position: relative;
+//     &::before{
+//         content: "";
+//         background: url("../img/gmap.jpg") center/cover;
+//         position: relative;
+//         display: block;
+//         height: 400px;
+//     }
+//     .container-section-sixth{
+//         width: 60%;
+//         position: absolute;
+//         left: 50%;
+//         transform: translate(-50%);
+//         top: -75px;
+//         background: $white1;
+//         text-align: center;
+//         height: 200px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-around;
+//         h2{
+//             font-weight: 100;
+//         }
+//         h3{
+//             color: $brown1;
+//             font-weight: 100;
+//         }
+//     }
+// }

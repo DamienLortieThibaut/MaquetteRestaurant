@@ -205,10 +205,8 @@ header .header-container .content-header p {
   cursor: pointer;
 }
 
-.section-third {
-  position: relative;
-}
 .section-third::before {
+  position: relative;
   content: "";
   background: url("../img/bg-menu-01.jpg") center/cover;
   position: relative;
@@ -253,6 +251,7 @@ header .header-container .content-header p {
 }
 
 .section-fourth {
+  padding-top: 30px;
   background: rgb(33, 32, 30);
 }
 .section-fourth .section-fourth-container {
@@ -336,6 +335,7 @@ header .header-container .content-header p {
   width: 90%;
 }
 .section-fourth .section-fourth-container .right-part .online-booking form button {
+  margin-top: 40px;
   grid-area: 3/2/4/3;
   background: black;
   color: rgb(239, 239, 239);
@@ -345,18 +345,24 @@ header .header-container .content-header p {
   letter-spacing: 3px;
   font-weight: bold;
   padding: 10px 0;
+  transition: 0.2s;
+}
+.section-fourth .section-fourth-container .right-part .online-booking form button:hover {
+  background: transparent;
+  color: black;
+  cursor: pointer;
 }
 
 .section-fifth {
   background: rgb(33, 32, 30);
   padding-top: 70px;
   text-align: center;
-  height: 500px;
+  height: 1000px;
 }
 .section-fifth .section-fifth-container {
   height: 100%;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -374,25 +380,144 @@ header .header-container .content-header p {
   font-size: 2rem;
   margin-top: -10px;
 }
+.section-fifth .section-fifth-container img {
+  margin: 20px 0;
+}
 .section-fifth .section-fifth-container .grid-event {
   display: grid;
   grid-template-columns: 60% 40%;
+  gap: 20px;
+}
+.section-fifth .section-fifth-container .grid-event a, .section-fifth .section-fifth-container .grid-event a:visited {
+  font-family: PoppinsMedium;
+  color: rgb(33, 32, 30);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 .section-fifth .section-fifth-container .grid-event .event1 {
+  height: 200px;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 35% 65%;
+  margin-left: 20px;
 }
-.section-fifth .section-fifth-container .grid-event .event1 .event01-img {
+.section-fifth .section-fifth-container .grid-event .event1:first-child {
+  margin-bottom: 20px;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .left-part .event01-img {
   background: url("../img/event-01.jpg") center/cover;
-}
-.section-fifth .section-fifth-container .grid-event .event1 .event02-img {
-  background: url("../img/event-02.jpg") center/cover;
-}
-.section-fifth .section-fifth-container .grid-event .event1 .center-date {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section-fifth .section-fifth-container .grid-event .event1 .center-date h2 {
+.section-fifth .section-fifth-container .grid-event .event1 .left-part .event02-img {
+  background: url("../img/event-02.jpg") center/cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .left-part .center-date {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: rgb(33, 32, 30);
+}
+.section-fifth .section-fifth-container .grid-event .event1 .left-part .center-date h2 {
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: RobotLight;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .left-part .center-date h2 span {
+  font-size: 2rem;
+  font-family: PoppinsMedium;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .right-part {
+  background: rgb(239, 239, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .right-part .container-right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 60%;
+  min-width: 350px;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .right-part .container-right-part h2 {
+  color: rgb(33, 32, 30);
+  text-transform: capitalize;
+  font-weight: 100;
+  font-family: RobotLight;
+  margin-top: 0;
+  font-size: 1.7rem;
+}
+.section-fifth .section-fifth-container .grid-event .event1 .right-part .container-right-part p {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: lightgray;
+}
+.section-fifth .section-fifth-container .grid-event .event3 {
+  background: rgb(239, 239, 239);
+  height: 421px;
+  background: url("../img/event-03.jpg") center/cover;
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-fifth .section-fifth-container .grid-event .event3 .container-event3 {
+  background: rgb(239, 239, 239);
+  margin: 20px;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-fifth .section-fifth-container .grid-event .event3 .container-event3 h2 {
+  color: rgb(33, 32, 30);
+  text-transform: capitalize;
+  font-weight: 100;
+  font-family: RobotLight;
+  margin-top: 0;
+  font-size: 1.7rem;
+}
+.section-fifth .section-fifth-container .grid-event .event3 .container-event3 p {
+  color: lightgray;
+}
+.section-fifth .section-fifth-container .grid-event .event3 .container-event3 a {
+  margin-bottom: 40px;
+}
+.section-fifth .section-fifth-container .grid-event .event3 .container-event3 .header-event3 {
+  background: rgb(33, 32, 30);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-fifth .section-fifth-container .grid-event .event3 .container-event3 .header-event3 h2 {
+  color: rgb(239, 239, 239);
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: RobotLight;
+}
+.section-fifth .section-fifth-container .grid-event .event3 .container-event3 .header-event3 h2 span {
+  font-size: 2rem;
+  font-family: PoppinsMedium;
 }/*# sourceMappingURL=index.css.map */

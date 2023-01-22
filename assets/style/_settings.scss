@@ -19,6 +19,13 @@ $font3: AlluraRegular;
 $white1: rgb(239, 239, 239);
 $brown1: rgb(144,102,68);
 $black1: rgb(33,32,30);
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 *{
     padding: 0;
     margin: 0;
