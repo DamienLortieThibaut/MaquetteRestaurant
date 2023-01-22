@@ -1,9 +1,8 @@
 .section-third{
+    position: relative;
     &::before{
-        position: relative;
         content: "";
         background: url("../img/bg-menu-01.jpg") center/cover;
-        position: relative;
         display: block;
         height: 660px;
     }

@@ -1,25 +1,27 @@
 .section-fifth{
     background: $black1;
-    padding-top: 70px;
     text-align: center;
-    height: 1000px;
-    // position: relative;
-    // &::after{
-    //     content: "";
-    //     background: url(../img/avatar-02.jpg) center/cover;
-    //     border-radius: 100px;
-    //     bottom: 40px;
-    //     left: 50%;
-    //     transform: translate(-50%);
-    //     height: 70px;
-    //     width: 70px;
-    //     position: absolute;
-    //     z-index: 1;
-    // }
+    height: 850px;
+    padding-top: 70px;
+    position: relative;
+    &::after{
+        content: "";
+        background: url(../img/avatar-02.jpg) center/cover;
+        border-radius: 100px;
+        bottom: 60px;
+        left: 50%;
+        transform: translate(-50%);
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        z-index: 1;
+    }
     .section-fifth-container{
         height: 100%;
         flex-direction: column;
-        @include center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         h3{
             font-weight: 100;
             font-size: 2.5rem;
