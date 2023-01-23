@@ -4,6 +4,9 @@
         height: 100%;
         display: grid;
         grid-template-columns: 50% 50%;
+        @media screen and (max-width: 685px) {
+            grid-template-columns: 1fr;
+        }
         .section-first-left-part{
             background: rgb(235, 234, 234);
             text-align: center;
@@ -12,6 +15,9 @@
             justify-content: center;
             align-items: center;
             padding: 15px;
+            @media screen and (max-width: 685px) {
+                display: block;
+            }
             .section-first-left-part-container{
                 border: 1px dashed $brown1;
                 padding: 25px;

@@ -5,12 +5,18 @@
         background: url("../img/bg-menu-01.jpg") center/cover;
         display: block;
         height: 660px;
+        @media screen and (max-width: 900px){
+            height: 900px;
+        }
     }
     .section-third-container{
         top: -50px;
         left: 50%;
         transform: translate(-50%);
         position: absolute;
+        @media screen and (max-width: 900px){
+            top: -350px;
+        }
         .menu{
             border-top: 4px solid rgb(199, 135, 52);
             background: rgb(238,238,238);
@@ -19,6 +25,12 @@
             min-width: 880px;
             min-height: 660px;
             align-items: center;
+            @media screen and (max-width: 900px){
+                display: block;
+                min-width: 0;
+                width: 400px;
+                padding: 20px;
+            }
             .meal{
                 padding: 20px 0;
                 display: grid;
@@ -27,6 +39,9 @@
                 align-items: center;
                 border-bottom: 1px dashed grey;
                 min-width: 400px;
+                @media screen and (max-width: 900px){
+                    min-width: 0;
+                }
                 img{
                     border-radius: 50px
                 }

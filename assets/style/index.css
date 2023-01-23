@@ -30,7 +30,12 @@ header {
   color: rgb(239, 239, 239);
 }
 header .header-container {
-  padding: 0 14%;
+  margin: 0 14%;
+}
+@media screen and (max-width: 950px) {
+  header .header-container {
+    margin: 0 5%;
+  }
 }
 header .header-container nav {
   height: 12vh;
@@ -46,7 +51,12 @@ header .header-container nav .menu {
   display: flex;
   justify-content: space-between;
   min-width: 500px;
-  width: 80%;
+  width: 70%;
+}
+@media screen and (max-width: 770px) {
+  header .header-container nav .menu {
+    display: none;
+  }
 }
 header .header-container nav .menu li {
   text-transform: uppercase;
@@ -112,6 +122,11 @@ header .header-container .content-header p {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media screen and (max-width: 685px) {
+  .section-first .section-first-container {
+    grid-template-columns: 1fr;
+  }
+}
 .section-first .section-first-container .section-first-left-part {
   background: rgb(235, 234, 234);
   text-align: center;
@@ -120,6 +135,11 @@ header .header-container .content-header p {
   justify-content: center;
   align-items: center;
   padding: 15px;
+}
+@media screen and (max-width: 685px) {
+  .section-first .section-first-container .section-first-left-part {
+    display: block;
+  }
 }
 .section-first .section-first-container .section-first-left-part .section-first-left-part-container {
   border: 1px dashed rgb(144, 102, 68);
@@ -170,6 +190,11 @@ header .header-container .content-header p {
   height: 370px;
   background: rgb(33, 32, 30);
 }
+@media screen and (max-width: 900px) {
+  .section-second {
+    height: 650px;
+  }
+}
 .section-second .section-second-container {
   height: 100%;
   text-align: center;
@@ -177,6 +202,22 @@ header .header-container .content-header p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (max-width: 900px) {
+  .section-second .section-second-container {
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .section-second .section-second-container {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .section-second .section-second-container {
+    padding-top: 100px;
+  }
 }
 .section-second .section-second-container h3 {
   color: rgb(144, 102, 68);
@@ -190,7 +231,6 @@ header .header-container .content-header p {
 .section-second .section-second-container ul {
   display: flex;
   justify-content: space-between;
-  min-width: 800px;
   width: 70%;
 }
 .section-second .section-second-container ul p {
@@ -198,6 +238,11 @@ header .header-container .content-header p {
   border-bottom: 1px solid rgb(239, 239, 239);
   padding-bottom: 2px;
   transition: 0.2s;
+}
+@media screen and (max-width: 500px) {
+  .section-second .section-second-container ul p {
+    font-size: 0.8rem;
+  }
 }
 .section-second .section-second-container ul p:hover {
   color: rgb(144, 102, 68);
@@ -214,11 +259,21 @@ header .header-container .content-header p {
   display: block;
   height: 660px;
 }
+@media screen and (max-width: 900px) {
+  .section-third::before {
+    height: 900px;
+  }
+}
 .section-third .section-third-container {
   top: -50px;
   left: 50%;
   transform: translate(-50%);
   position: absolute;
+}
+@media screen and (max-width: 900px) {
+  .section-third .section-third-container {
+    top: -350px;
+  }
 }
 .section-third .section-third-container .menu {
   border-top: 4px solid rgb(199, 135, 52);
@@ -229,6 +284,14 @@ header .header-container .content-header p {
   min-height: 660px;
   align-items: center;
 }
+@media screen and (max-width: 900px) {
+  .section-third .section-third-container .menu {
+    display: block;
+    min-width: 0;
+    width: 400px;
+    padding: 20px;
+  }
+}
 .section-third .section-third-container .menu .meal {
   padding: 20px 0;
   display: grid;
@@ -237,6 +300,11 @@ header .header-container .content-header p {
   align-items: center;
   border-bottom: 1px dashed grey;
   min-width: 400px;
+}
+@media screen and (max-width: 900px) {
+  .section-third .section-third-container .menu .meal {
+    min-width: 0;
+  }
 }
 .section-third .section-third-container .menu .meal img {
   border-radius: 50px;

@@ -3,7 +3,10 @@ header{
     min-height: 100vh;
     color: $white1;
     .header-container{
-        padding: 0 14%;
+        margin: 0 14%;
+        @media screen and (max-width: 950px){
+            margin: 0 5%;
+        }
         nav {
             height: 12vh;
             display: flex;
@@ -17,7 +20,10 @@ header{
                 display: flex;
                 justify-content: space-between;
                 min-width: 500px;
-                width: 80%;
+                width: 70%;
+                @media screen and (max-width: 770px){
+                    display: none;
+                }
                 li{
                     text-transform: uppercase;
                     font-size: 0.8rem;
