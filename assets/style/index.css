@@ -325,7 +325,7 @@ header .header-container .content-header p {
 }
 .section-fourth .section-fourth-container {
   text-align: center;
-  margin: 0 15%;
+  margin: 0 3%;
   background: rgb(239, 239, 239);
   height: 500px;
   display: grid;
@@ -368,6 +368,7 @@ header .header-container .content-header p {
 }
 .section-fourth .section-fourth-container .right-part .online-booking {
   height: 60%;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -395,6 +396,9 @@ header .header-container .content-header p {
   grid-template-columns: 33% 33% 34%;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
+}
+.section-fourth .section-fourth-container .right-part .online-booking form:last-child {
+  justify-items: center;
 }
 .section-fourth .section-fourth-container .right-part .online-booking form input, .section-fourth .section-fourth-container .right-part .online-booking form select {
   background: transparent;

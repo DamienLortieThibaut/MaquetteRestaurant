@@ -3,7 +3,7 @@
     background: $black1;
     .section-fourth-container{
         text-align: center;
-        margin: 0 15%;
+        margin: 0 3%;
         background: $white1;
         height: 500px;
         display: grid;
@@ -48,6 +48,7 @@
             align-items: center;
             .online-booking{
                 height: 60%;
+                width: 70%;
                 display: flex;
                 justify-content: space-around;
                 flex-direction: column;
@@ -74,6 +75,9 @@
                     grid-template-columns: 33% 33% 34%;
                     grid-template-rows: 1fr 1fr 1fr;
                     gap: 15px;
+                    &:last-child{
+                        justify-items: center;
+                    }
                     input, select{
                         background: transparent;
                         border: none;
