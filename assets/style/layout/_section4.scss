@@ -8,10 +8,17 @@
         height: 500px;
         display: grid;
         grid-template-columns: 30% 70%;
+        @media screen and (max-width: 770px) {
+            display: block;
+            background: none;
+        }
         .left-part{
             background: black;
             color: $white1;
             padding: 10px;
+            @media screen and (max-width: 770px) {
+                height: 450px;
+            }
             .left-part-container{
                 border: 1px dashed $white1;
                 display: flex;
@@ -46,6 +53,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width: 770px) {
+                height: 650px;
+                background: $white1;
+            }
             .online-booking{
                 height: 60%;
                 width: 70%;
@@ -75,16 +86,22 @@
                     grid-template-columns: 33% 33% 34%;
                     grid-template-rows: 1fr 1fr 1fr;
                     gap: 15px;
-                    &:last-child{
-                        justify-items: center;
+                    @media screen and (max-width: 500px) {
+                        display: block;
                     }
                     input, select{
                         background: transparent;
                         border: none;
                         border-bottom: 1px solid $brown1;
+                        @media screen and (max-width: 500px) {
+                            display: block;
+                            width: 100%;
+                            margin: 20px 0;
+                            padding-bottom: 10px;
+                        }
                     }
                     button{
-                        margin-top: 40px;
+                        margin: 15px auto;
                         grid-area: 3 / 2 / 4 / 3;
                         background: black;
                         color: $white1;
@@ -99,6 +116,10 @@
                             background: transparent;
                             color: black;
                             cursor: pointer;
+                        }
+                        @media screen and (max-width: 1000px) {
+                            letter-spacing: 1px;
+                            width: 120px;
                         }
                     }
                 }

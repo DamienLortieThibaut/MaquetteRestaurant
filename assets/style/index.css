@@ -331,10 +331,21 @@ header .header-container .content-header p {
   display: grid;
   grid-template-columns: 30% 70%;
 }
+@media screen and (max-width: 770px) {
+  .section-fourth .section-fourth-container {
+    display: block;
+    background: none;
+  }
+}
 .section-fourth .section-fourth-container .left-part {
   background: black;
   color: rgb(239, 239, 239);
   padding: 10px;
+}
+@media screen and (max-width: 770px) {
+  .section-fourth .section-fourth-container .left-part {
+    height: 450px;
+  }
 }
 .section-fourth .section-fourth-container .left-part .left-part-container {
   border: 1px dashed rgb(239, 239, 239);
@@ -365,6 +376,12 @@ header .header-container .content-header p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 770px) {
+  .section-fourth .section-fourth-container .right-part {
+    height: 650px;
+    background: rgb(239, 239, 239);
+  }
 }
 .section-fourth .section-fourth-container .right-part .online-booking {
   height: 60%;
@@ -397,16 +414,26 @@ header .header-container .content-header p {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
 }
-.section-fourth .section-fourth-container .right-part .online-booking form:last-child {
-  justify-items: center;
+@media screen and (max-width: 500px) {
+  .section-fourth .section-fourth-container .right-part .online-booking form {
+    display: block;
+  }
 }
 .section-fourth .section-fourth-container .right-part .online-booking form input, .section-fourth .section-fourth-container .right-part .online-booking form select {
   background: transparent;
   border: none;
   border-bottom: 1px solid rgb(144, 102, 68);
 }
+@media screen and (max-width: 500px) {
+  .section-fourth .section-fourth-container .right-part .online-booking form input, .section-fourth .section-fourth-container .right-part .online-booking form select {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding-bottom: 10px;
+  }
+}
 .section-fourth .section-fourth-container .right-part .online-booking form button {
-  margin-top: 40px;
+  margin: 15px auto;
   grid-area: 3/2/4/3;
   background: black;
   color: rgb(239, 239, 239);
@@ -422,6 +449,12 @@ header .header-container .content-header p {
   background: transparent;
   color: black;
   cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .section-fourth .section-fourth-container .right-part .online-booking form button {
+    letter-spacing: 1px;
+    width: 120px;
+  }
 }
 
 .section-fifth {
@@ -442,6 +475,13 @@ header .header-container .content-header p {
   width: 50px;
   position: absolute;
   z-index: 1;
+}
+@media screen and (max-width: 770px) {
+  .section-fifth {
+    background: none;
+    z-index: -1;
+    background: rgb(33, 32, 30);
+  }
 }
 .section-fifth .section-fifth-container {
   height: 100%;
@@ -466,6 +506,11 @@ header .header-container .content-header p {
 }
 .section-fifth .section-fifth-container img {
   margin: 20px 0;
+}
+@media screen and (max-width: 770px) {
+  .section-fifth .section-fifth-container {
+    display: none;
+  }
 }
 .section-fifth .section-fifth-container .grid-event {
   display: grid;
@@ -535,7 +580,6 @@ header .header-container .content-header p {
   justify-content: space-around;
   align-items: flex-start;
   height: 60%;
-  min-width: 350px;
 }
 .section-fifth .section-fifth-container .grid-event .event1 .right-part .container-right-part h2 {
   color: rgb(33, 32, 30);
@@ -546,10 +590,6 @@ header .header-container .content-header p {
   font-size: 1.7rem;
 }
 .section-fifth .section-fifth-container .grid-event .event1 .right-part .container-right-part p {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   color: lightgray;
 }
 .section-fifth .section-fifth-container .grid-event .event3 {
