@@ -3,19 +3,6 @@
     text-align: center;
     height: 850px;
     padding-top: 70px;
-    position: relative;
-    &::after{
-        content: "";
-        background: url(../img/avatar-02.jpg) center/cover;
-        border-radius: 100px;
-        bottom: 60px;
-        left: 50%;
-        transform: translate(-50%);
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        z-index: 1;
-    }
     @media screen and (max-width: 770px) {
         background: none;
         z-index: -1;
@@ -63,7 +50,6 @@
                 height: 200px;
                 display: grid;
                 grid-template-columns: 35% 65%;
-                margin-left: 20px;
                 &:first-child{
                     margin-bottom: 20px;
                 }
@@ -125,8 +111,8 @@
             .event3{
                 background: $white1;
                 height: 421px;
+                width: 93%;
                 background: url("../img/event-03.jpg") center/cover;
-                margin-bottom: -20px;
                 @include center;
                 .container-event3{
                     background: $white1;

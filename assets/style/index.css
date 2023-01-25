@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: AlluraRegular;
   src: url("../fonts/Allura-Regular.ttf");
@@ -381,6 +382,7 @@ header .header-container .content-header p {
   .section-fourth .section-fourth-container .right-part {
     height: 650px;
     background: rgb(239, 239, 239);
+    position: relative;
   }
 }
 .section-fourth .section-fourth-container .right-part .online-booking {
@@ -462,19 +464,6 @@ header .header-container .content-header p {
   text-align: center;
   height: 850px;
   padding-top: 70px;
-  position: relative;
-}
-.section-fifth::after {
-  content: "";
-  background: url(../img/avatar-02.jpg) center/cover;
-  border-radius: 100px;
-  bottom: 60px;
-  left: 50%;
-  transform: translate(-50%);
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  z-index: 1;
 }
 @media screen and (max-width: 770px) {
   .section-fifth {
@@ -529,7 +518,6 @@ header .header-container .content-header p {
   height: 200px;
   display: grid;
   grid-template-columns: 35% 65%;
-  margin-left: 20px;
 }
 .section-fifth .section-fifth-container .grid-event .event1:first-child {
   margin-bottom: 20px;
@@ -595,8 +583,8 @@ header .header-container .content-header p {
 .section-fifth .section-fifth-container .grid-event .event3 {
   background: rgb(239, 239, 239);
   height: 421px;
+  width: 93%;
   background: url("../img/event-03.jpg") center/cover;
-  margin-bottom: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -648,38 +636,58 @@ header .header-container .content-header p {
 
 .section-sixth {
   position: relative;
-}
-.section-sixth::before {
-  content: "";
-  background: url("../img/gmap.jpg") center/cover;
-  position: relative;
-  display: block;
-  height: 400px;
-}
-.section-sixth .container-section-sixth {
-  width: 60%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: -75px;
-  background: rgb(239, 239, 239);
   text-align: center;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
 }
-.section-sixth .container-section-sixth p {
-  margin: auto;
-  width: 80%;
+.section-sixth:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url(../img/gmap.jpg) center/cover;
+  left: 0;
+  bottom: 0;
+}
+.section-sixth .quote-container {
+  background: rgb(239, 239, 239);
+  z-index: 3;
+  position: relative;
+  max-width: 1000px;
+  bottom: 150px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 70px;
+  box-shadow: 0 0 3px #333;
+}
+.section-sixth .quote-container:before {
+  content: "";
+  position: absolute;
+  background: url(../img/avatar-02.jpg) center/cover;
+  height: 60px;
+  width: 60px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+}
+.section-sixth .quote-container .text-container {
   line-height: 15px;
 }
-.section-sixth .container-section-sixth h2 {
+.section-sixth .quote-container .text-container:before {
+  content: "❝";
+}
+.section-sixth .quote-container .text-container:after {
+  content: "❞";
+}
+.section-sixth .quote-container .text-container:before, .section-sixth .quote-container .text-container:after {
+  font-size: 1.5rem;
+}
+.section-sixth .quote-container h2 {
+  margin: 30px 0 15px;
+  font-family: RobotLight;
   font-weight: 100;
 }
-.section-sixth .container-section-sixth h3 {
-  margin: 20px 0;
+.section-sixth .quote-container p {
   color: rgb(144, 102, 68);
-  font-weight: 100;
 }
 
 footer {
@@ -688,10 +696,22 @@ footer {
   grid-template-columns: 50% 50%;
   height: 200px;
 }
+@media screen and (max-width: 610px) {
+  footer {
+    height: 250px;
+    background: rgb(33, 32, 30);
+    grid-template-columns: 1fr;
+  }
+}
 footer .left-part {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 610px) {
+  footer .left-part {
+    display: none;
+  }
 }
 footer .left-part .container-left-part {
   width: 70%;
